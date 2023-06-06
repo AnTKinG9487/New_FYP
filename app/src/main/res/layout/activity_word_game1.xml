@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wind_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textScreen"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_days"
+        android:text="Stage 1" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgquestion"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="150dp">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textQuestion"
+            android:textColor="#332FA2"
+            android:textSize="18sp"
+            android:layout_width="220dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon_days"
+            android:text="Guess The Facial Expressions" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sad" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_marginBottom="70dp"
+        android:padding="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bgpurple"
+        android:layout_width="200dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:text="Word"
+        android:textSize="24sp"
+        android:fontFamily="@font/lemon_days"
+        android:textColor="@color/black"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layoutParent"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutParent2"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    </LinearLayout>
+
+</LinearLayout>

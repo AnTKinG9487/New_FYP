@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/windrisebackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/secondgame"
+        android:layout_width="205dp"
+        android:layout_height="314dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/push2"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.showTile(1)}"/>
+
+    <ImageView
+        android:id="@+id/third_game"
+        android:layout_width="61dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/secondgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        app:srcCompat="@drawable/apple"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.showTile(1)}"/>
+
+    <ImageView
+        android:id="@+id/fourth_game"
+        android:layout_width="65dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/banana"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.showTile(1)}"/>
+
+    <ImageView
+        android:id="@+id/wordgame"
+        android:layout_width="72dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/kiwi"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.showTile(1)}"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

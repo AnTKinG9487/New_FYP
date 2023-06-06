@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/bgpurple"
+    android:id="@+id/next_game">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/playagin"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:background="@drawable/next_bnt"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->viewModel.showTile(1)}"/>
+
+        <ImageView
+            android:id="@+id/backtomanu"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/back_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->viewModel.showTile(1)}"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

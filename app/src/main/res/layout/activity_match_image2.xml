@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".match_image_2"
+    android:background="@drawable/pink_bg_2">
+
+    <ImageView
+        android:id="@+id/settingbtn"
+        android:layout_width="81dp"
+        android:layout_height="90dp"
+        android:background="@drawable/setting_btn_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.showTile(1)}"/>
+
+    <FrameLayout
+        android:id="@+id/frame_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Add the first photo -->
+
+        <ImageView
+            android:id="@+id/qs_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box_bg" />
+
+        <!-- Add the second photo -->
+        <ImageView
+            android:id="@+id/answer1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/happy_eye"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toStartOf="@+id/frame_3"
+        app:layout_constraintStart_toEndOf="@+id/frame_1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Add the first photo -->
+
+        <ImageView
+            android:id="@+id/qs_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box_bg" />
+
+        <!-- Add the second photo -->
+        <ImageView
+            android:id="@+id/answer2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/angry_mouth"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Add the first photo -->
+
+        <ImageView
+            android:id="@+id/qs_bg3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box_bg" />
+
+        <!-- Add the second photo -->
+        <ImageView
+            android:id="@+id/answer3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/angry_eye"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_4"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Add the first photo -->
+
+        <!-- Add the second photo -->
+        <ImageView
+            android:id="@+id/qs_bg4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/qs_bg_blue" />
+
+        <ImageView
+            android:id="@+id/question"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+            app:srcCompat="@drawable/angry_no_eye"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/question_text"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_days"
+        android:text="Guess The Facial Expressions"
+        app:layout_constraintBottom_toTopOf="@+id/frame_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
